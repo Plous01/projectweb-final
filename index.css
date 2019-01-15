@@ -350,7 +350,7 @@ section.submenu ul li a:hover {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
     body {
         border: 4px solid var(--primary-action-color);
     }
@@ -397,7 +397,7 @@ section.submenu ul li a:hover {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1800px) {
 
     .banner-image {
         height: 65vh;
