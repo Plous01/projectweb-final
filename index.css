@@ -6,7 +6,7 @@
 
 html {
     font-family: museo-sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 13pt;
+    font-size: 16pt;
 }
 
 p {
@@ -351,6 +351,9 @@ section.submenu ul li a:hover {
 
 
 @media (min-width: 1400px) {
+    html{
+        font-size: 14pt;
+    }
     body {
         border: 4px solid var(--primary-action-color);
     }
@@ -398,6 +401,9 @@ section.submenu ul li a:hover {
 }
 
 @media (min-width: 1800px) {
+    html{
+        font-size: 13pt;
+    }
 
     .banner-image {
         height: 65vh;
