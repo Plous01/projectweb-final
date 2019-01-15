@@ -77,10 +77,11 @@ p.schuiven {
     animation-duration: 5s;
     animation-delay: 5s;
     animation-iteration-count: infinite;
-    max-width: 33em;
+    max-width: 50%;
     margin: auto;
     margin-top: 4em;
     margin-bottom: 4em;
+    height: 100vh;
 }
 
 p.schuiven2 {
@@ -93,8 +94,9 @@ p.schuiven2 {
     animation-duration: 10s;
     animation-delay: 5s;
     animation-iteration-count: infinite;
-    max-width: 33em;
+    max-width: 50%;
     margin: auto;
+    height: 100vh;
 
 }
 
@@ -168,6 +170,37 @@ span.vibrate {
     animation: vibrate 0.5s linear infinite both;
     color: #E6007E;
 
+}
+
+
+
+#beoordeling {
+    width: 100%;
+    text-align: center;
+    line-height: 3em;
+}
+
+button {
+    border: none;
+    background-color: var(--primary-action-color);
+    font-size: 1em;
+    text-transform: uppercase;
+    height: 100%;
+    padding: 0.4em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    transition: all .2s ease-in-out;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+textarea {
+    font-size: 1em;
 }
 
 
@@ -293,7 +326,7 @@ span.vibrate {
 }
 
 .title {
-    position:relative;
+    position: relative;
     margin-top: 15%;
 }
 
