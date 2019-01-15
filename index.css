@@ -1,12 +1,12 @@
 :root {
     --primary-action-color: rgb(153, 37, 141);
     --secondary-action-color: rgb(239, 192, 48);
-    --icon-size: 1.2em;
+    --icon-size: 1.5em;
 }
 
 html {
     font-family: museo-sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16pt;
+    font-size: 20pt;
 }
 
 p {
