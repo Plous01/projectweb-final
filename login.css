@@ -72,7 +72,7 @@ div.button-container {
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
     form {
         width: 50%;
     }
