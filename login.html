@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Aanmelden</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uyr6mwg.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <section class="menu">
+            <a class="account" href="login.html">
+                <img src="Afbeeldingen/user.svg" alt="Mijn profiel" class="account-icon" />
+            </a>
+            <a class="logo" href="index.html">
+                <img src="Afbeeldingen/logo.svg" alt="WOW Air Logo" />
+            </a>
+            <a class="search">
+                <img src="Afbeeldingen/search.svg" alt="Zoekloepje"  class="search-icon"/>
+            </a>
+            <a class="all-stories" href="index.html">
+                Alle verhalen
+            </a>
+            <a class="my-stories" href="mijnverhalen.html">
+                Mijn verhalen
+            </a>
+
+        </section>
+    </header>
+
+    <!--Aanmeldformulier-->
+    <h1 class="aanmelden">Aanmelden</h1>
+
+    <form>
+        <fieldset>
+            <legend>Persoonlijk</legend>
+            <label>Voornaam</label>
+            <input type="text" placeholder="Paulien" />
+            <label> Achternaam</label>
+            <input type="text" placeholder="Lous" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Account</legend>
+            <label>E-mail</label>
+            <input type="email" placeholder="paulien.lous@hva.nl">
+            <label>Wachtwoord</label>
+            <input type="password">
+            <label>Verifieer wachtwoord</label>
+            <input type="password">
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact</legend>
+            <label>Adres</label>
+            <input type="text" placeholder="Tafelbergweg 51">
+            <label>Postcode</label>
+            <input type="text" placeholder="1105 BD">
+            <label>Telefoonnummer</label>
+            <input type="tel" placeholder="020 595 4111">
+        </fieldset>
+
+        <div class="button-container">
+            <button class="register">Registreren</button>
+            <button class="cancel">Annuleren</button>
+        </div>
+    </form>
+
+    <footer>
+        <img src="Afbeeldingen/wow-logo-foot.min.png" />
+        <p>Nog steeds aan het zoeken?</p>
+        <a href="#">Toers en activiteiten</a>
+        <a href="#">Bestemmingen</a>
+        <a href="#">Beste prijzen</a>
+        <hr>
+
+        <div>
+            <p>WOW air - Katrínartún 4 - 105 Reykjavík - Kt. 451011-0220 - Vsknr. 109354</p>
+            <p>
+                <a href="#">Neem contact met ons op</a>
+            </p>
+        </div>
+    </footer>
+
+    <audio id="audio-like" src="audio/like.mp3" />
+    <audio id="audio-unlike" src="audio/unlike.mp3" />
+    <audio id="audio-ding" src="audio/ding.mp3"/>
+
+    <scrip scr="index.js"></scrip>
+
+
+</body>
+</html>
