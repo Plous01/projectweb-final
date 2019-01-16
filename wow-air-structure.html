@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WOW Air Structure</title>
+    <style>
+        header, footer {
+            height: 100px;
+            border: 1px solid black;
+        }
+        main {
+            height: 100vh;
+            border: 1px solid black;
+        }
+        aside {
+            display: flex;
+            flex-grow: 1;
+            border: 1px solid blue;
+            margin: 5px;
+        }
+
+        nav.sort, nav.filter {
+            border: 1px solid red;
+            margin: 10px;
+        }
+
+        .sort ul, .filter ul {
+            display: none;
+        }
+
+        .stories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-grow: 3;
+            border: 1px solid blue;
+            margin: 5px;
+        }
+
+        .stories article {
+            display: flex;
+            flex-basis: 100%;
+            flex-direction: column;
+            border: 1px solid red;
+        }
+
+        article.dummy {
+            display: none;
+        }
+
+        .stories article p {
+            flex-grow: 1;
+            border: 1px solid green;
+        }
+
+        @media (min-width: 1000px) {
+            .stories article {
+                flex-basis: 45%;
+            }
+
+        }
+
+        @media (min-width: 1400px) {
+            main {
+                display: flex;
+            }
+            .stories article {
+                flex-basis: 30%;
+            }
+
+            article.dummy {
+                display: block;
+            }
+
+            aside {
+                display: block;
+            }
+            .sort ul, .filter ul {
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <aside>
+            <nav class="sort">
+                <h1>Sorteren</h1>
+                <ul>
+                    <li>Link</li>
+                    <li>Link</li>
+                    <li>Link</li>
+                </ul>
+            </nav>
+            <nav class="filter">
+                <h1>Filteren</h1>
+                <ul>
+                    <li>Link</li>
+                    <li>Link</li>
+                    <li>Link</li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="stories">
+            <article>
+                <h1>Title</h1>
+                <p>Verhaal verhaal verhaal</p>
+                <a>Lezen</a>
+            </article>
+            <article>
+                <h1>Title</h1>
+                <p>Verhaal verhaal verhaal</p>
+                <a>Lezen</a>
+            </article>
+            <article>
+                <h1>Title</h1>
+                <p>Verhaal verhaal verhaal</p>
+                <a>Lezen</a>
+            </article>
+            <article>
+                <h1>Title</h1>
+                <p>Verhaal verhaal verhaal</p>
+                <a>Lezen</a>
+            </article>
+            <article>
+                <h1>Title</h1>
+                <p>Verhaal verhaal verhaal</p>
+                <a>Lezen</a>
+            </article>
+            <article>
+                <h1>Title</h1>
+                <p>Verhaal verhaal verhaal</p>
+                <a>Lezen</a>
+            </article>
+            <article class="dummy"></article>
+            <article>
+                <button>Meer verhalen</button>
+            </article>
+            <article class="dummy"></article>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
