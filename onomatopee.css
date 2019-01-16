@@ -74,11 +74,11 @@ p.schuiven {
     color: black;
     animation-name: rollIn;
     animation-direction: alternate;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-delay: 5s;
     animation-iteration-count: infinite;
-    max-width: 50%;
-    margin: auto;
+
+    margin: 1em;
     margin-top: 4em;
     margin-bottom: 4em;
     height: 100vh;
@@ -91,11 +91,11 @@ p.schuiven2 {
     color: black;
     animation-name: rollOut;
     animation-direction: alternate;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-delay: 5s;
     animation-iteration-count: infinite;
-    max-width: 50%;
-    margin: auto;
+
+    margin: 1em;
     height: 100vh;
 
 }
@@ -162,7 +162,7 @@ span.flash {
     animation-direction: alternate;
     animation-iteration-count: infinite;
     color: 95C11F;
-    font-size: 4em;
+    font-size: 2em;
 
 }
 
@@ -216,25 +216,32 @@ textarea {
 
 @keyframes rollIn {
     0% {
-        opacity: 1;
-        transform: translateX(10%) rotate(30deg);
+        transform: rotate(0deg);
     }
-
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
     100% {
-        opacity: 1;
-        transform: translateX(0px) rotate(0deg);
+        transform: rotate(5deg);
     }
 }
 
 
 @keyframes rollOut {
-    0% {
-        opacity: 1;
-        transform: translateX(0px) rotate(0deg);
+   0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
     }
     100% {
-        opacity: 1;
-        transform: translateX(10%) rotate(30deg);
+        transform: rotate(-5deg);
     }
 }
 
@@ -321,7 +328,7 @@ textarea {
         transform: scale(1);
     }
     100% {
-        transform: scale(3);
+        transform: scale(1.2);
     }
 }
 
@@ -421,4 +428,11 @@ textarea {
 .title img:nth-child(10) {
     top: 5%;
     left: 85%;
+}
+
+@media (min-width: 1400px) {
+    p.schuiven, p.schuiven2{
+        width:50%;
+        margin:auto;
+    }
 }
