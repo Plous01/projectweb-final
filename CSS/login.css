@@ -1,0 +1,98 @@
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form fieldset label,
+form fieldset input {
+    display: block;
+    width: 98%;
+}
+
+form fieldset input {
+    font-size: 1em;
+    margin-bottom: 1em;
+    height: 1.5em;
+}
+
+form fieldset input::placeholder {
+    color: lightgray;
+}
+
+form fieldset input:focus {
+    outline: 1px solid var(--primary-action-color);
+}
+
+form fieldset input:invalid {
+    background-image: url(/Afbeeldingen/thumbs-up-regular.svg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+}
+
+form fieldset input:valid {
+    background-image: url(/Afbeeldingen/thumbs-up-solid.svg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    border: 1px solid green;
+}
+
+form fieldset {
+    margin: 1em;
+    padding: 1em;
+}
+
+form fieldset legend {
+    font-weight: bold;
+}
+
+form div.button-container button.register {
+    border: none;
+    background-color: var(--primary-action-color);
+    font-size: 1em;
+    text-transform: uppercase;
+    height: 100%;
+    padding: 0.4em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    box-shadow: 0 1em 1.5em rgba(0, 0, 0, 0.15);
+    transition: all .2s ease-in-out;
+    color: white;
+    cursor: pointer;
+    margin: 1em;
+}
+
+form div.button-container button.cancel {
+    border: 1px solid var(--primary-action-color);
+    background-color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    height: 100%;
+    padding: 0.4em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    box-shadow: 0 1em 1.5em rgba(0, 0, 0, 0.15);
+    transition: all .2s ease-in-out;
+    color: black;
+    cursor: pointer;
+    margin: 1em;
+}
+
+
+form div.button-container button:hover {
+    transform: scale(1.1);
+}
+
+form div.button-container {
+    text-align: center;
+}
+
+@media (min-width: 62.5em) {
+    form {
+        width: 50%;
+    }
+}
