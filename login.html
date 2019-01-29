@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aanmelden</title>
     <link rel="stylesheet" href="https://use.typekit.net/uyr6mwg.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/login.css">
 </head>
 
 <body>
@@ -34,26 +35,27 @@
     <!--Aanmeldformulier-->
     <h1 class="aanmelden">Aanmelden</h1>
 
-    <form>
+    <form action="/aanmelden" validate>
         <fieldset>
             <legend>Persoonlijk</legend>
-            <label>Voornaam</label>
-            <input type="text" placeholder="Paulien" />
-            <label> Achternaam</label>
-            <input type="text" placeholder="Lous" />
+            <label for="firstname">Voornaam</label>
+            <input id="firstname" type="text" placeholder="Paulien" required/>
+            <label for="lastname"> Achternaam</label>
+            <input id="lastname" type="text" placeholder="Lous" required/>
         </fieldset>
 
         <fieldset>
             <legend>Account</legend>
-            <label>E-mail</label>
-            <input type="email" placeholder="paulien.lous@hva.nl">
-            <label>Wachtwoord</label>
-            <input type="password">
-            <label>Verifieer wachtwoord</label>
-            <input type="password">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="paulien.lous@hva.nl" required>
+            <label for="password">Wachtwoord</label>
+            <input id="password" type="password" required>
+            <label for="passwordcheck">Verifieer wachtwoord</label>
+            <input id="passwordcheck" type="password" required>
         </fieldset>
 
-        <fieldset>
+        <!--
+           <fieldset>
             <legend>Contact</legend>
             <label>Adres</label>
             <input type="text" placeholder="Tafelbergweg 51">
@@ -62,6 +64,7 @@
             <label>Telefoonnummer</label>
             <input type="tel" placeholder="020 595 4111">
         </fieldset>
+        -->
 
         <div class="button-container">
             <button class="register">Registreren</button>
@@ -70,7 +73,9 @@
     </form>
 
     <footer>
-        <img src="Afbeeldingen/wow-logo-foot.min.png" />
+        <div>
+            <img src="Afbeeldingen/wow-logo-foot.min.png" />
+        </div>
         <p>Nog steeds aan het zoeken?</p>
         <a href="#">Toers en activiteiten</a>
         <a href="#">Bestemmingen</a>
@@ -87,10 +92,11 @@
 
     <audio id="audio-like" src="audio/like.mp3" />
     <audio id="audio-unlike" src="audio/unlike.mp3" />
-    <audio id="audio-ding" src="audio/ding.mp3"/>
+    <audio id="audio-ding" src="audio/ding.mp3" />
 
     <scrip scr="index.js"></scrip>
 
 
 </body>
+
 </html>
