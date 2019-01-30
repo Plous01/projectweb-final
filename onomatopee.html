@@ -20,18 +20,17 @@
                 <img src="Afbeeldingen/user.svg" alt="Mijn profiel" class="account-icon"/>
             </a>
             <a class="logo" href="index.html">
-                <img src="Afbeeldingen/logo.svg" alt="WOW Air Logo" />
+                <img src="Afbeeldingen/logo.svg" alt="WOW Air Logo" href="index.html"/>
             </a>
             <a class="search">
                 <img src="Afbeeldingen/search.svg" alt="Zoekloepje"  class="search-icon"/>
             </a>
-            <a class="all-stories" href="mijnverhalen.html">
-                Mijn verhalen
-            </a>
-            <a class="my-stories" href="index.html">
+            <a class="all-stories" href="index.html">
                 Alle verhalen
             </a>
-
+            <a class="my-stories" href="mijnverhalen.html">
+                Mijn verhalen
+            </a>
         </section>
     </header>
 
@@ -84,17 +83,20 @@
         </div>
     </section>
 
-    <section id="beoordeling">
+    <section class="beoordeling">
         <form>
-            <h1>Plaats hieronder een beoordeling</h1>
-            <textarea rows="5" cols="40" placeholder="Schrijf hier uw beoordeling"></textarea>
+            <label for="review">Plaats hieronder een beoordeling</label>
+            <textarea id="review" rows="5" cols="40" placeholder="Schrijf hier uw beoordeling" required></textarea>
             <br/>
-            <button>Plaatsen</button>
+            <button type="submit">Plaatsen</button>
         </form>
     </section>
 
+
     <footer>
-        <img src="Afbeeldingen/wow-logo-foot.min.png" />
+        <div>
+            <img src="Afbeeldingen/wow-logo-foot.min.png" />
+        </div>
         <p>Nog steeds aan het zoeken?</p>
         <a href="#">Toers en activiteiten</a>
         <a href="#">Bestemmingen</a>
