@@ -139,18 +139,31 @@ main aside section.sort {
 }
 
 main aside section.sort select {
-    background-color: var(--primary-action-color);
-    border: none;
-    color: white;
+    -webkit-appearance:none;
+    background-color: white;
+    border: 0;
+    border-radius: 0;
+    color: black;
     font-size: 1.2em;
     font-weight: bold;
     width: 100%;
+}
+
+main aside section.sort select:focus {
+    outline: 0;
 }
 
 main aside section.sort select option {
     background-color: white;
     color: black;
 }
+
+main aside section.filter {
+    padding-left: 0.4em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
 
 
 main aside section.extra {
@@ -224,10 +237,6 @@ main section.stories article:hover {
    transform: scale(1.05);
 }
 
-main section.stories article a:hover {
-    color: var(--secondary-action-color);
-    border-color: var(--secondary-action-color);
-}
 
 main section.stories article div.article-container {
     display: flex;
@@ -297,6 +306,11 @@ main section.stories article a {
     font-weight: bold;
 }
 
+main section.stories article a:hover {
+    color: #6D105C;
+    border-color: #6D105C;
+}
+
 main section.stories article button {
     background-color: var(--primary-action-color);
     color: white;
@@ -321,7 +335,9 @@ footer img {
     max-width: 500px;
 }
 
-footer a{
+footer a {
+    text-decoration: none;
+    color: var(--primary-action-color);
     text-align: center;
     flex-grow:1;
     white-space: nowrap;
