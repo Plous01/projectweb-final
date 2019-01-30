@@ -102,9 +102,9 @@ section.beoordeling form textarea {
 
 section.beoordeling form textarea:focus {
     outline: none;
-    border: 0.05em solid var(--primary-action-color);
+    border: 0.2em solid var(--primary-action-color);
     border-radius: 0.2em;
-    box-shadow: 0.1em 0.1em 0.5em var(--primary-action-color);
+    box-shadow: 0.2em 0.2em 0.5em var(--primary-action-color);
 }
 
 
