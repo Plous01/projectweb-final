@@ -213,7 +213,7 @@ span.grow:hover{
 
 
 span.rotate-right {
-    transform: rotate(30deg);
+    transform: rotate(15deg);
     color: #009FE3;
     font-size: 1em;
     background-color: #EA5B0C;
@@ -300,7 +300,7 @@ span.flip:hover {
 
 
 span.bounce {
-    animation: bounce 1s;
+    animation: bounce 2s;
     font-size: 3em;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -319,12 +319,12 @@ span.bounce:hover {
 
 
 span.flash {
-    animation: flash 0.3s;
+    animation: flash 1s;
     animation-duration: 0, 3s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     color: #95C11F;
-    font-size: 2em;
+    font-size: 1em;
     background-color: #E30613;
 
 }
@@ -346,12 +346,12 @@ span.flash:hover {
 span.vibrate {
     animation: vibrate 0.5s linear infinite both;
     color: #E6007E;
-    background-color: #95C11F;
+    background-color: #FFDE00;
 
 }
 
 span.vibrate:hover {
-    color: #95C11F;
+    color: #FFDE00;
     background-color:#E6007E ;
 
 }

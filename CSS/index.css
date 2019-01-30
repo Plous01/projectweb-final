@@ -366,10 +366,11 @@ section.submenu ul li a {
     text-decoration: none;
     margin-right: 1em;
     font-weight: bold;
+    color: var(--primary-action-color);
 }
 
 section.submenu ul li a:hover {
-    color: var(--primary-action-color);
+    color: #6D105C;
 }
 
 
