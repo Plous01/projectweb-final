@@ -13,7 +13,7 @@ header {
     margin-bottom: 2em;
 }
 
-.menu {
+header section.menu {
     position: relative;
     display: flex;
     justify-content: space-evenly;
@@ -24,22 +24,16 @@ header {
     margin-right: 2em
 }
 
-.account,
-.search {
+header section.menu a.account,
+header section.menu a.search {
     flex-grow: 1;
     padding-bottom: 1.2em;
     border-bottom: 1px solid grey;
     text-align: center;
 }
 
-.account-icon,
-.search-icon {
-    width: var(--icon-size);
-    height: var(--icon-size);
-}
-
-.my-stories,
-.all-stories {
+header section.menu a.my-stories,
+header section.menu a.all-stories {
     position: absolute;
     text-align: center;
     text-decoration: none;
@@ -47,17 +41,96 @@ header {
     color: black;
 }
 
-.my-stories {
-    left: 10%;
-    bottom: -10%;
-}
 
-.all-stories {
-    right: 10%;
-    bottom: -10%;
+header section.menu a img.account-icon,
+header section.menu a img.search-icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
 }
 
 
+
+header section.menu a.my-stories:hover,
+header section.menu a.all-stories:hover {
+    color: var(--primary-action-color);
+}
+
+header section.menu a.my-stories {
+    right: 0%;
+    bottom: -10%;
+}
+
+header section.menu a.all-stories {
+    left: 0%;
+    bottom: -10%;
+}
+
+section.beoordeling {
+    width: 100%;
+    text-align: center;
+    line-height: 3em;
+}
+
+section.beoordeling form label {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+}
+
+section.beoordeling form button {
+    border: none;
+    background-color: var(--primary-action-color);
+    font-size: 1em;
+    text-transform: uppercase;
+    height: 100%;
+    padding: 0.4em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    transition: all .2s ease-in-out;
+    color: white;
+    cursor: pointer;
+}
+
+section.beoordeling form button:hover {
+    transform: scale(1.1);
+}
+
+section.beoordeling form textarea {
+    font-size: 1em;
+}
+
+section.beoordeling form textarea:focus {
+    outline: none;
+    border: 0.05em solid var(--primary-action-color);
+    border-radius: 0.2em;
+    box-shadow: 0.1em 0.1em 0.5em var(--primary-action-color);
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    background-color: #f4eee8;
+}
+
+footer img {
+    width: 100%;
+    max-width: 500px;
+}
+
+footer a{
+    text-align: center;
+    flex-grow:1;
+    white-space: nowrap;
+}
+
+footer p, footer div{
+    text-align: center;
+    flex-grow:1;
+}
 
 
 section {
@@ -128,14 +201,14 @@ span.grow:hover{
 
 
 span.rotate-right {
-    transform: rotate(45deg);
+    transform: rotate(30deg);
     color: #009FE3;
     font-size: 1em;
     background-color: #EA5B0C;
 }
 
 span.rotate-right:hover {
-    transform: rotate(-45deg);
+    transform: rotate(-30deg);
     color: #EA5B0C;
     font-size: 1em;
     background-color:#009FE3;
@@ -145,14 +218,14 @@ span.rotate-right:hover {
 
 
 span.rotate-left {
-    transform: rotate(-45deg);
+    transform: rotate(-30deg);
     color: #82368C;
     font-size: .5em;
     background-color: #FFDE00;
 }
 
 span.rotate-left:hover {
-    transform: rotate(45deg);
+    transform: rotate(30deg);
     color: #FFDE00;
     font-size: .5em;
     background-color: #82368C;
@@ -269,42 +342,6 @@ span.vibrate:hover {
     color: #95C11F;
     background-color:#E6007E ;
 
-}
-
-
-
-#beoordeling {
-    width: 100%;
-    text-align: center;
-    line-height: 3em;
-}
-
-button {
-    border: none;
-    background-color: var(--primary-action-color);
-    font-size: 1em;
-    text-transform: uppercase;
-    height: 100%;
-    padding: 0.4em;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
-    transition: all .2s ease-in-out;
-    color: white;
-    cursor: pointer;
-}
-
-button:hover {
-    transform: scale(1.1);
-}
-
-textarea {
-    font-size: 1em;
-}
-
-
-.blok2{
-    background-color: rgb (255, 34, 200);
 }
 
 

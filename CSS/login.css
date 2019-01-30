@@ -24,21 +24,10 @@ form fieldset input::placeholder {
 }
 
 form fieldset input:focus {
-    outline: 1px solid var(--primary-action-color);
-}
-
-form fieldset input:invalid {
-    background-image: url(/Afbeeldingen/thumbs-up-regular.svg);
-    background-position: right top;
-    background-repeat: no-repeat;
-    border: 1px solid red;
-}
-
-form fieldset input:valid {
-    background-image: url(/Afbeeldingen/thumbs-up-solid.svg);
-    background-position: right top;
-    background-repeat: no-repeat;
-    border: 1px solid green;
+    outline: none;
+    border: 0.05em solid var(--primary-action-color);
+    border-radius: 0.2em;
+    box-shadow: 0.1em 0.1em 0.5em var(--primary-action-color);
 }
 
 form fieldset {
