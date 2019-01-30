@@ -38,20 +38,26 @@
     <form action="/aanmelden" validate>
         <fieldset>
             <legend>Persoonlijk</legend>
-            <label for="firstname">Voornaam</label>
-            <input id="firstname" type="text" placeholder="Paulien" required/>
-            <label for="lastname"> Achternaam</label>
-            <input id="lastname" type="text" placeholder="Lous" required/>
+            <div class="form-container">
+
+                <label for="firstname">Voornaam</label>
+                <input id="firstname" type="text" placeholder="Paulien" required/>
+                <label for="lastname"> Achternaam</label>
+                <input id="lastname" type="text" placeholder="Lous" required/>
+            </div>
         </fieldset>
 
         <fieldset>
             <legend>Account</legend>
-            <label for="email">E-mail</label>
-            <input id="email" type="email" placeholder="paulien.lous@hva.nl" required>
-            <label for="password">Wachtwoord</label>
-            <input id="password" type="password" required>
-            <label for="passwordcheck">Verifieer wachtwoord</label>
-            <input id="passwordcheck" type="password" required>
+            <div class="form-container">
+
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="paulien.lous@hva.nl" required>
+                <label for="password">Wachtwoord</label>
+                <input id="password" type="password" required>
+                <label for="passwordcheck">Verifieer wachtwoord</label>
+                <input id="passwordcheck" type="password" required>
+            </div>
         </fieldset>
 
         <!--
