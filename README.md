@@ -30,7 +30,7 @@ Op de verhalenpagina wordt gebruik gemaakt van meerdere pagina’s waar je naart
 •	Login.html (de login/aanmeld pagina)
 •	Onomatopee.html (een van de vormgegeven verhalen)
 
-De verhalenwebsite maakt gebruik van twee mediaqueries: @media (min-width: 1000px) en @media (min-width: 1400px) die ervoor moeten zorgen dat de content op meerdere devices goed zichtbaar is. 
+De verhalenwebsite maakt gebruik van twee mediaqueries: @media (min-width: 62.5em) en @media (min-width: 87.5em) die ervoor moeten zorgen dat de content op meerdere devices goed zichtbaar is. 
 
 De basisopbouw van mijn verhalenwebsite bestaat uit een header, een main en een footer. In de header heb ik het menu van de verhalenwebsite gezet, in de main alle artikelen en de footer lijkt heel erg op de oorspronkelijke footer van WOW Air.
 
@@ -38,12 +38,12 @@ CSS
 Ik heb drie CSS bestanden:
 •	Index.css (de styling voor de homepagina)
 •	Login.css (de styling voor de login/aanmeldpagina)
-•	Onomatopee (de styling voor het verhaal)
+•	Onomatopee.css (de styling voor het verhaal)
 
-De reden dat ik deze drie CSS bestanden apart van elkaar heb gehouden, is om meer orde te hebben en de styling makkelijker te maken.
+De reden dat ik deze drie CSS bestanden apart van elkaar heb gehouden, is om meer orde te hebben en de styling makkelijker te maken en aanpassen.
 
 JS
-In mijn JS is het script te zien dat nodig is om de micro-interacties te laten gebeuren
+In mijn JS is het script te zien dat nodig is om de micro-interacties te laten gebeuren.
 
 
 
